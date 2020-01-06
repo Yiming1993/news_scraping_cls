@@ -1,0 +1,9 @@
+#!/bin/sh
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+HOME=/
+/sbin/service crond start
+crontab -e
+0 20 * * * /main.py
+/sbin/service crond restart

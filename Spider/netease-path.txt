@@ -1,0 +1,7 @@
+http://tech.163.com/special/00097UHL/smart_datalist.js?callback=data_callback
+http://tech.163.com/special/00097UHL/smart_datalist_02.js?callback=data_callback
+http://tech.163.com/special/00097UHL/smart_datalist_03.js?callback=data_callback
+http://tech.163.com/special/00097UHL/smart_datalist_04.js?callback=data_callback
+http://tech.163.com/special/00097UHL/smart_datalist_05.js?callback=data_callback
+http://tech.163.com/special/00097UHL/smart_datalist_06.js?callback=data_callback
+http://tech.163.com/special/00097UHL/smart_datalist_07.js?callback=data_callback
