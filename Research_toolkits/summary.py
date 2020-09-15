@@ -26,7 +26,7 @@ class Summary(object):
         news_headline = self.db.NEWS.find({"$and":[{"coll_date":self.today},
                                                    {"intro":{"$exists":True}}]})
         f = open('../Report/summary.txt','w')
-        f.write('今日AI数据头条：' + '\n')
+        f.write('' + '\n')
         f.close()
         for i in news_headline:
             title = i["title"]
