@@ -6,12 +6,12 @@ import re
 #database-related
 parser = argparse.ArgumentParser(description='Get Data from MongoDB database')
 parser.add_argument('-overwrite', default=True, help='overwrite existing files if they share the same name')
-parser.add_argument('-host', type=str, default='120.27.6.18', help='database host[defalt: 120.**.*.18]')
-parser.add_argument('-port', type=str, default='20815', help='database port[default: 20815]')
-parser.add_argument('-username', type=str, default='user1', help='database username[default: u****]')
-parser.add_argument('-password', type=str, default='user199008', help='database password[default: **********]')
-parser.add_argument('-dbname', type=str, default='NEWS', help='database name[default: NEWS]')
-parser.add_argument('-collection',type=str,default = 'NEWS')
+parser.add_argument('-host', type=str, default='', help='database host')
+parser.add_argument('-port', type=str, default='', help='database port')
+parser.add_argument('-username', type=str, default='', help='database username')
+parser.add_argument('-password', type=str, default='', help='database password[default: **********]')
+parser.add_argument('-dbname', type=str, default='', help='database name')
+parser.add_argument('-collection',type=str,default = '')
 
 #jieba-related
 parser.add_argument('-dict', type=str, default='./References/dict.txt', help='dictionary for jieba[default: "dict.txt"]')
