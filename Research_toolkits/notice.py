@@ -42,7 +42,7 @@ class Alert(Spider):
         smtpObj.sendmail(sender, [to], message.as_string())
         print('Email sent to %s' % to)
         # except:
-        #     admin = 'yiming.dai.1993@outlook.com'
+        #     admin = ''
         #     message = MIMEMultipart()
         #     message['From'] = Header(sender, 'utf-8')
         #     message['To'] = Header(admin, 'utf-8')
@@ -99,8 +99,8 @@ class Alert(Spider):
             if today == i[0]:
                 mail_address = i[1][1]
                 # print(mail_address)
-                text = str(i[1][0]) + '你好，今天是你负责新闻筛选。关于头条筛选，可参考邮件内附件，新闻已按照顺序排序好。\n有任何问题请及时在微信群里反馈。'
-                self.Email(mail_address, '关于新闻网站的工作', text)
+                text = str(i[1][0]) + ''
+                self.Email(mail_address, '', text)
                 break
             else:
                 continue
@@ -111,14 +111,14 @@ class Alert(Spider):
         name_list = list(zip(self.weekdays, mail_list))
         # self.get_headline()
         f = open('./headline_today.txt', 'a')
-        f.write('新闻筛选提醒附件' + '\n')
+        f.write('' + '\n')
         f.close()
         for i in name_list:
             if today == i[0]:
                 mail_address = i[1][1]
                 # print(mail_address)
-                text = str(i[1][0]) + '你好，现在是晚上八点，请及时筛选新闻。关于头条筛选，可参考邮件内附件，新闻已按照顺序排序好。\n有任何问题请及时反馈，谢谢！'
-                self.work_check(mail_address, '新闻筛选已经延迟', text)
+                text = str(i[1][0]) + ''
+                self.work_check(mail_address, '', text)
                 break
             else:
                 continue
