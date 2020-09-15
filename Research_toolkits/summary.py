@@ -37,8 +37,8 @@ class Summary(object):
             f.close()
         f = open('../Report/summary.txt', 'a')
         f.write('\n')
-        f.write('更多AI前沿新闻，欢迎访问:' + '\n')
-        f.write('👉ai.tsinghua-hx.org.cn👈')
+        f.write('' + '\n')
+        f.write('👉👈')
         f.close()
 
 if __name__ == '__main__':
