@@ -1,4 +1,4 @@
-# 使用CNN进行新闻筛选的AINEWS系统
+# 一个新闻爬取和智能推送的系统（A news scraping and recommending system）
 
 ##近期更新
 2018-04-02：更新techcrunch.py和theatlantic.py，修复无法爬取数据的错误；添加spider_update.py，准备代码优化工作
